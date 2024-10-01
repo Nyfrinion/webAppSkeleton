@@ -1,11 +1,16 @@
 Creating a django project: django-admin startproject django_project
 Creating a django app: python manage.py startapp django_app
 Creating a react app: npx create-react-app frontend
+
+note: create react app is the built in but vite is apparently easier/faster?
+
 Docker build: docker-compose up --build
 Docker bring down: docker-compose down
 Django/Postgresql Migration: docker-compose exec backend python manage.py migrate --noinput
 Check for default Django DB tables: docker-compose exec db psql --username=hello_django --dbname=hello_django_dev
 Check the volume: docker volume inspect django-on-docker_postgres_data
+Adding a react router: npm install react-router-dom
+
 
 note to self: to integrate react and django have
 django create restful apis? and post via react?
